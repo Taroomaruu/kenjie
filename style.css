@@ -882,17 +882,17 @@ select {
   overflow: auto;
 }
 
-@media (max-width: 600px) {
-  /* Make the two bottom polaroids smaller on mobile */
-  .memory-photos .polaroid {
-    width: 40%;
-    max-width: 160px;
-  }
-}
+
+
 
 
 /* ========== MOBILE CELEBRATION SCREEN FIX ========== */
 @media (max-width: 600px) {
+
+  .memory-photos .polaroid {
+    width: 40%;
+    max-width: 160px;
+  }
 
   /* Let the page scroll naturally instead of centering
      a tall card inside the phone screen. */
@@ -969,7 +969,6 @@ select {
     padding-top: 5px;
     font-size: 10px;
   }
-}
 
 
   /* Tighter footer buttons */
@@ -985,7 +984,7 @@ select {
     padding: 9px 8px;
     font-size: 13px;
   }
-  
+
   .back-to-letter {
     padding: 10px;
     font-size: 15px;
@@ -1043,4 +1042,4 @@ select {
     bottom: 1%;
     right: -12px;
   }
-
+}
