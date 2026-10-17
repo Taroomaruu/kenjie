@@ -947,22 +947,30 @@ select {
     line-height: 1.2;
   }
 
-  /* THE TWO BOTTOM MEMORY PHOTOS */
+
   .memory-photos {
-    grid-template-columns: repeat(2, minmax(0, 140px));
+    grid-template-columns: repeat(2, minmax(0, 100px));
     justify-content: center;
-    gap: 10px;
-    margin: 14px 0 18px;
+    gap: 12px;
+    margin: 12px 0 16px;
   }
 
   .memory-photo {
-    padding: 6px 6px 9px;
+    padding: 4px 4px 7px;
+  }
+
+  .memory-photo img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
   }
 
   .memory-photo figcaption {
-    padding-top: 7px;
-    font-size: 11px;
+    padding-top: 5px;
+    font-size: 10px;
   }
+}
+
 
   /* Tighter footer buttons */
   .yay-footer {
@@ -1029,4 +1037,4 @@ select {
     bottom: 1%;
     right: -12px;
   }
-}
+
