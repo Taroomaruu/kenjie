@@ -987,25 +987,54 @@ select {
   }
 
   /* Make the decorative background polaroids smaller too */
+ 
+  /* Six scattered boyfriend polaroids — MOBILE ONLY */
   .polaroid {
-    width: 88px;
+    width: 96px;
     padding: 5px 5px 7px;
   }
 
-  .polaroid img,
-  .polaroid-one img,
-  .polaroid-two img,
-  .polaroid-three img,
-  .polaroid-four img,
-  .polaroid-five img,
-  .polaroid-six img {
+  .polaroid img {
     height: 70px;
   }
 
-  .polaroid-one { top: 3%; left: 1/5px; }
-  .polaroid-two { top: 3%; right: 1.5px; }
-  .polaroid-three { top: 34%; left: 3px; }
-  .polaroid-four { top: 34%; right: 3px; }
-  .polaroid-five { bottom: 2%; left: 8px; }
-  .polaroid-six { bottom: 2%; right: 8px; }
+  .polaroid-one img { height: 70px; }
+  .polaroid-two img { height: 70px; }
+  .polaroid-three img { height: 70px; }
+  .polaroid-four img { height: 70px; }
+  .polaroid-five img { height: 70px; }
+  .polaroid-six img { height: 70px; }
+
+  /* Top pair */
+  .polaroid-one {
+    top: 3%;
+    left: 8px;
+  }
+
+  .polaroid-two {
+    top: 3%;
+    right: 8px;
+  }
+
+  /* Middle pair */
+  .polaroid-three {
+    top: 34%;
+    left: 8px;
+  }
+
+  .polaroid-four {
+    top: 34%;
+    right: 8px;
+  }
+
+  /* Bottom pair — pulled farther inward */
+  .polaroid-five {
+    bottom: 2%;
+    left: 12px;
+  }
+
+  .polaroid-six {
+    bottom: 2%;
+    right: 12px;
+  }
 }
