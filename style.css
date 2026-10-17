@@ -889,3 +889,144 @@ select {
     max-width: 160px;
   }
 }
+
+
+/* ========== MOBILE CELEBRATION SCREEN FIX ========== */
+@media (max-width: 600px) {
+
+  /* Let the page scroll naturally instead of centering
+     a tall card inside the phone screen. */
+  .yay-screen {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: max(30px, env(safe-area-inset-top))
+             14px
+             max(28px, env(safe-area-inset-bottom));
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .yay-card {
+    width: min(100%, 390px);
+    margin: 0 auto;
+  }
+
+  /* Smaller, tighter celebration title */
+  .yay-text {
+    font-size: clamp(30px, 9vw, 40px);
+    line-height: 1.08;
+    margin-bottom: 16px;
+  }
+
+  /* Compact playlist card */
+  .playlist-card {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .playlist-photo {
+    width: 68px;
+    height: 68px;
+    flex: 0 0 68px;
+  }
+
+  .playlist-title {
+    font-size: 15px;
+    line-height: 1.25;
+    margin-bottom: 6px;
+  }
+
+  .spotify-link {
+    font-size: 12px;
+  }
+
+  /* Give the greeting less vertical space */
+  .boyfriend-greeting {
+    margin-top: 18px;
+    font-size: clamp(20px, 5.5vw, 24px);
+    line-height: 1.2;
+  }
+
+  /* THE TWO BOTTOM MEMORY PHOTOS */
+  .memory-photos {
+    grid-template-columns: repeat(2, minmax(0, 140px));
+    justify-content: center;
+    gap: 10px;
+    margin: 14px 0 18px;
+  }
+
+  .memory-photo {
+    padding: 6px 6px 9px;
+  }
+
+  .memory-photo figcaption {
+    padding-top: 7px;
+    font-size: 11px;
+  }
+
+  /* Tighter footer buttons */
+  .yay-footer {
+    gap: 10px;
+    margin-top: 16px;
+    padding-top: 12px;
+  }
+
+  .download-photos,
+  .back-to-letter {
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  /* Make the decorative background polaroids smaller too */
+  .polaroid {
+    width: 76px;
+    padding: 5px 5px 7px;
+  }
+
+  .polaroid-one img,
+  .polaroid-two img,
+  .polaroid-three img,
+  .polaroid-four img,
+  .polaroid-five img,
+  .polaroid-six img {
+    height: 62px;
+  }
+
+  .polaroid figcaption {
+    padding-top: 5px;
+    font-size: 8px;
+    line-height: 1.15;
+  }
+
+  /* Keep the decorative photos near the edges */
+  .polaroid-one {
+    top: 3%;
+    left: -18px;
+  }
+
+  .polaroid-two {
+    top: 4%;
+    right: -18px;
+  }
+
+  .polaroid-three {
+    top: 35%;
+    left: -22px;
+  }
+
+  .polaroid-four {
+    top: 36%;
+    right: -22px;
+  }
+
+  .polaroid-five {
+    bottom: 1%;
+    left: -12px;
+  }
+
+  .polaroid-six {
+    bottom: 1%;
+    right: -12px;
+  }
+}
