@@ -889,11 +889,6 @@ select {
 /* ========== MOBILE CELEBRATION SCREEN FIX ========== */
 @media (max-width: 600px) {
 
-  .memory-photos .polaroid {
-    width: 40%;
-    max-width: 160px;
-  }
-
   /* Let the page scroll naturally instead of centering
      a tall card inside the phone screen. */
   .yay-screen {
@@ -993,53 +988,24 @@ select {
 
   /* Make the decorative background polaroids smaller too */
   .polaroid {
-    width: 76px;
+    width: 88px;
     padding: 5px 5px 7px;
   }
 
+  .polaroid img,
   .polaroid-one img,
   .polaroid-two img,
   .polaroid-three img,
   .polaroid-four img,
   .polaroid-five img,
   .polaroid-six img {
-    height: 62px;
+    height: 70px;
   }
 
-  .polaroid figcaption {
-    padding-top: 5px;
-    font-size: 8px;
-    line-height: 1.15;
-  }
-
-  /* Keep the decorative photos near the edges */
-  .polaroid-one {
-    top: 3%;
-    left: -18px;
-  }
-
-  .polaroid-two {
-    top: 4%;
-    right: -18px;
-  }
-
-  .polaroid-three {
-    top: 35%;
-    left: -22px;
-  }
-
-  .polaroid-four {
-    top: 36%;
-    right: -22px;
-  }
-
-  .polaroid-five {
-    bottom: 1%;
-    left: -12px;
-  }
-
-  .polaroid-six {
-    bottom: 1%;
-    right: -12px;
-  }
+  .polaroid-one { top: 3%; left: 1/5px; }
+  .polaroid-two { top: 3%; right: 1.5px; }
+  .polaroid-three { top: 34%; left: 3px; }
+  .polaroid-four { top: 34%; right: 3px; }
+  .polaroid-five { bottom: 2%; left: 8px; }
+  .polaroid-six { bottom: 2%; right: 8px; }
 }
