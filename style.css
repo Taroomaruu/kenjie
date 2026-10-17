@@ -881,3 +881,11 @@ select {
 .yay-screen {
   overflow: auto;
 }
+
+@media (max-width: 600px) {
+  /* Make the two bottom polaroids smaller on mobile */
+  .memory-photos .polaroid {
+    width: 40%;
+    max-width: 160px;
+  }
+}
