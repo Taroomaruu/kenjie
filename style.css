@@ -979,7 +979,13 @@ select {
     padding-top: 12px;
   }
 
-  .download-photos,
+    .download-photos {
+    width: 75%;
+    align-self: center;
+    padding: 9px 8px;
+    font-size: 13px;
+  }
+  
   .back-to-letter {
     padding: 10px;
     font-size: 15px;
